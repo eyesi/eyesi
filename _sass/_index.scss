@@ -1,0 +1,138 @@
+.index {
+    display: block;
+    position: relative;
+}
+
+.index ul {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.index li:nth-child(3n+1) {
+    width: 100vw;
+}
+
+.index li:nth-child(5n+0) {
+    background: #ebf3f8;
+}
+
+.index li:nth-child(4n+0) {
+    background: #d9d9d9;
+}
+
+.index li {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 95vh;
+    overflow: visible;
+}
+
+.index li a {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.index figure {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    margin: 0;
+}
+
+.index img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 75%;
+    max-height: 75%;
+    height: auto;
+    width: auto;
+    transform-origin: top left;
+}
+
+.index figcaption {
+    position: absolute;
+    max-width: 80%;
+    margin: 20px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    cursor: pointer;
+    transform: translate(-50%, 0);
+    opacity: 0.75;
+}
+
+/* Type */
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.hover:hover {
+    opacity: 1;
+}
+
+.index .title {
+    position: absolute;
+    bottom: $spacing-unit * 1.5;
+    left: $spacing-unit * 2;
+    font-size: $font-size;
+}
+
+.hover:hover .title {
+    position: absolute;
+    bottom: $spacing-unit * 2;
+}
+
+.index .price {
+    position: absolute;
+    bottom: $spacing-unit * 1.5;
+    right: $spacing-unit * 2;
+    font-size: $font-size;
+}
+
+.hover:hover .price {
+    position: absolute;
+    bottom: $spacing-unit * 2;
+}
+
+.index .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(252,235,234,0.9);
+    background: -moz-linear-gradient(top, rgba(252,235,234,0.7), rgba(252,235,234,0.9));
+    background: -webkit-linear-gradient(top, rgba(252,235,234,0.7), rgba(252,235,234,0.9));
+    background: linear-gradient(to top, rgba(252,235,234,0.7), rgba(252,235,234,0.9));
+}
+
+/* Effects */
+
+.hover, .title, .price {
+    transition-property: all;
+    transition-duration: $transition-duration;
+    transition-timing-function: ease;
+    transition-delay: initial;
+    z-index: $front;
+}

@@ -1,0 +1,24 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: $spacing-unit;
+    padding-left: $spacing-unit * 2;
+    padding-right: $spacing-unit;
+    z-index: $back;
+}
+
+/* Type */
+
+footer li {
+    font-size: $font-size;
+    display: inline-block;
+    float: left;
+    padding-right: $spacing-unit;
+}
+
+footer a {
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+}

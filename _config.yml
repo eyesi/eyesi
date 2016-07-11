@@ -1,12 +1,12 @@
 # Site settings
-title: Jekyll shop powered by Snipcart
-email: geeks@snipcart.com
+title: eyesi
+email: hello@eyesi.co
 description: 
 baseurl: "/eyesi.co" # the subpath of your site, e.g. /blog/
 url: "http://eyesi.co" # the base hostname & protocol for your site
 facebook_username: eyesieyesi
 instagram_username:  eyesieyesi
-api_key: YjdiNWIyOTUtZTIyMy00MWMwLTkwNDUtMzI1M2M2NTgxYjE0
+api_key: ZmVmZjU0NjMtZmI4OS00ODc1LTg5MGItMjIwOTEzMTQ2MThhNjM1OTEyODY3MjEyNDUyNTYx
 
 # Build settings
 markdown: kramdown

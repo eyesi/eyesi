@@ -1,0 +1,64 @@
+/* General */
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    background: $soft-color;
+    margin-bottom: $spacer;
+}
+
+/* Type */
+
+@import url(http://db.onlinewebfonts.com/c/bbb6e60048cdf23865725f0cd9bbbb79?family=Neuzeit+S+LT+Std);
+
+@font-face {font-family: "Neuzeit S LT Std";
+    src: url("http://db.onlinewebfonts.com/t/bbb6e60048cdf23865725f0cd9bbbb79.eot");
+    src: url("http://db.onlinewebfonts.com/t/bbb6e60048cdf23865725f0cd9bbbb79.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/bbb6e60048cdf23865725f0cd9bbbb79.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/bbb6e60048cdf23865725f0cd9bbbb79.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/bbb6e60048cdf23865725f0cd9bbbb79.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/bbb6e60048cdf23865725f0cd9bbbb79.svg#Neuzeit S LT Std") format("svg");
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body, a, p {
+    font-family: 'Neuzeit S LT Std', 'Graphik', 'Arial', sans-serif;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    font-size: $font-size;
+    color: $text-color;
+}
+
+/* Colour */
+
+body {
+    background: $soft-color;
+}
